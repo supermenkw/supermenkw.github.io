@@ -3,49 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets\styles\style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/styles/tailwind.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Angga Webpage</title>
 </head>
 
 <body>
-    <!-- Hero -->
-    <section class="et-hero-tabs">
-        <h1>HI STRANGERS! I AM ANGGA GINANJAR</h1>
-        <h3>Testing for Github.io</h3>
-        <div class="et-hero-tabs-container">
-            <a class="et-hero-tab" href="#biodata">Who's This Guy?</a>
-            <a class="et-hero-tab" href="#work">My Work</a>
-            <a class="et-hero-tab" href="#contact">Let's Get in Touch!</a>
-            <span class="et-hero-tab-slider"></span>
+    <div id="particles-js" style="position: fixed; width: 100%; height: 100%;"></div>
+    <div class="h-screen relative flex items-center justify-center">
+        <div class="flex lg:w-8/12 w-10/12 flex-col md:flex-row">
+            <img class="w-56 h-56 rounded-full border-2 border-blue-500 mb-8 md:mb-0" src="./assets/images/angga.png">
+            <div class="md:ml-16 text-blue-500">
+                <h1 class="text-3xl font-bold">Angga M Ginanjar</h1>
+                <div class="uppercase tracking-widest font-normal">Junior Front-End Engineer</div>
+                <p class="mt-4 text-lg leading-relaxed"><span id="writing-text"></span></p>
+                <div class="flex mt-10 items-center">
+                    <!-- Button -->
+                    <a class="border-2 border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 text-center rounded px-5 py-3 mr-4"
+                        href="mailto:anggamsg@gmail.com">
+                        Contact Me
+                    </a>
+                    <!-- Github Link -->
+                    <a href="https://github.com/supermenkw" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="#4299e1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="mx-4 feather feather-github">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- Linkedin Link -->
+                    <a href="https://linkedin.com/in/angga-ginanjar-9184b312a/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="#4299e1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="mx-4 feather feather-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <!-- Medium Link -->
+                    <a href="https://medium.com/@supermenkw" target="_blank">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 23.5"
+                            fill="none" stroke="#4299e1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="mx-4 feather-medium">
+                            <path
+                                d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Main -->
-    <main class="et-main">
-        <section class="et-slide" id="biodata">
-            <h1>Lorem Ipsum</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere excepturi tenetur possimus,
-                earum sequi suscipit voluptatem explicabo a tempora illo sed repellendus natus maiores culpa distinctio
-                ut ad aspernatur?</h3>
-        </section>
-        <section class="et-slide" id="work">
-            <h1>Lorem Ipsum</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere excepturi tenetur possimus,
-                earum sequi suscipit voluptatem explicabo a tempora illo sed repellendus natus maiores culpa distinctio
-                ut ad aspernatur?</h3>
-        </section>
-        <section class="et-slide" id="contact">
-            <h1>Lorem Ipsum</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere excepturi tenetur possimus,
-                earum sequi suscipit voluptatem explicabo a tempora illo sed repellendus natus maiores culpa distinctio
-                ut ad aspernatur?</h3>
-        </section>
-    </main>
+    <!-- Scripts -->
+    <script src="./plugin/particles/particles.min.js"></script>
+    <script src="./assets/scripts/app.js"></script>
+    <script src="./plugin/typed/typed.min.js"></script>
+    <script src="./assets/scripts/index.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="assets\scripts\main.js"></script>
 
 </html>
