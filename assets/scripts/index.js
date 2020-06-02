@@ -4,7 +4,7 @@ Typed.new('#writing-text', {
     strings: [
         'I am a Full-stack Web Developer!^1000',
         'i love to try and learn new things.^1000',
-        'specially frontend.^1000',
+        'especially frontend.^1000',
         'happy coding!'
     ],
     typeSpeed: 40,
