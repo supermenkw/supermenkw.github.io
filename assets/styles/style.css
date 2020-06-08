@@ -11,6 +11,11 @@
     stroke: #fff;
 }
 
+.feather-codepen:hover {
+    fill: #4299e1;
+    stroke: #fff;
+}
+
 /**
  * Tooltip Styles
  */
