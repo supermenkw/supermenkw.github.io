@@ -19,9 +19,20 @@ a:hover {
   color: #26768f;
 }
 
+<<<<<<< HEAD
 #app {
   filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.1));
 }
+=======
+.feather-codepen:hover {
+    fill: #4299e1;
+    stroke: #fff;
+}
+
+/**
+ * Tooltip Styles
+ */
+>>>>>>> 150057e48146aae97df80bcccc5f7ed9d40301b9
 
 .card {
   margin-top: 85px;
@@ -189,14 +200,49 @@ a:hover {
   .modal-content {
     width: 80%;
   }
+<<<<<<< HEAD
 }
 
 @media (max-width: 450px) {
   #app {
     width: 100%;
+=======
+  
+  /* Position tooltip above the element */
+  [data-tooltip]:before {
+    position: absolute;
+    top: 150%;
+    left: 118%;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 7px;
+    width: 75px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    background-color: #4299e1;
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+>>>>>>> 150057e48146aae97df80bcccc5f7ed9d40301b9
   }
 
   .card {
     width: 100%;
   }
+<<<<<<< HEAD
 }
+=======
+  
+  /* Show tooltip content on hover */
+  [data-tooltip]:hover:before,
+  [data-tooltip]:hover:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+>>>>>>> 150057e48146aae97df80bcccc5f7ed9d40301b9
