@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="card" :class="{'open': open}">
+            <div class="card-info top">
+                <div class="card-image"></div>
+                <div class="card-details">
+                    <div class="card-thumbnail">
+                        <img src="./assets/images/profile.jpg" alt="" id="myImg">
+                    </div>
+                    <div class="card-detail">
+                        <div class="card-detail-name">
+                            <div class="card-name"><a href="https://hi-angga.tech" target="_blank">Angga Ginanjar</a>
+                            </div>
+                            <div class="card-type">Junior Front End Developer</div>
+                        </div>
+                        <div class="chevron" v-on:click="openCard"><i
+                                :class="{'fa fa-chevron-down': open, 'fa fa-chevron-up': !open}"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-info bottom">
+                <div class="card-pop">
+                    <div class="github-icon"><i class="fa fa-envelope-o"></i></div>
+                    <div class="mobile-detail">
+                        <a href="mailto:anggamsg@gmail.com" target="_blank">anggamsg@gmail.com</a>
+                        <div class="type">Personal Contact</div>
+                    </div>
+                </div>
+                <div class="card-pop">
+                    <div class="github-icon"><i class="fa fa-github"></i></div>
+                    <div class="mobile-detail">
+                        <a href="https://github.com/supermenkw" target="_blank">github/supermenkw</a>
+                        <div class="type">Github Repository</div>
+                    </div>
+                </div>
+                <div class="card-pop">
+                    <div class="codepen-icon"><i class="fa fa-codepen"></i></div>
+                    <div class="email-detail">
+                        <a href="https://codepen.com/supermenkw" target="_blank">codepen/supermenkw</a>
+                        <div class="type">Pen</div>
+                    </div>
+                </div>
+                <div class="card-pop">
+                    <div class="github-icon"><i class="fa fa-linkedin"></i></div>
+                    <div class="mobile-detail">
+                        <a href="https://www.linkedin.com/in/angga-ginanjar-9184b312a/"
+                            target="_blank">linkedin/supermenkw</a>
+                        <div class="type">Portfolio</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="./assets/scripts/index.js"></script>
+
+</html>
