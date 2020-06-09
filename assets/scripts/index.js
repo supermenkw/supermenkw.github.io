@@ -3,7 +3,6 @@ new Vue({
     data: {
         open: false
     },
-<<<<<<< HEAD
     methods: {
         openCard: function () {
             this.open = !this.open;
@@ -31,6 +30,3 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
     modal.style.display = "none";
 }
-=======
-})
->>>>>>> 150057e48146aae97df80bcccc5f7ed9d40301b9
